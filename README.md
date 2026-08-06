@@ -1,4 +1,4 @@
-# 🍽️ Zpmato data analysis
+# 🍽️ Zomato data analysis
 
 ## 📌 Project Overview
 
