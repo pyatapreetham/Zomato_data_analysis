@@ -1,184 +1,258 @@
-# Zomato_data_analysis
+# 🍽️ Zomato Business Intelligence Dashboard | Power BI
 
-Zomato Business Intelligence Dashboard | Power BI
-📌 Project Overview
+## 📌 Project Overview
 
-This project presents an end-to-end Business Intelligence Dashboard built using Microsoft Power BI to analyze the performance of a food delivery platform (Zomato). The dashboard focuses on identifying business challenges, uncovering actionable insights, and supporting data-driven decision-making through interactive visualizations.
+This project presents an end-to-end **Business Intelligence Dashboard** built using **Microsoft Power BI** to analyze the performance of a food delivery platform (Zomato). The dashboard focuses on identifying key business challenges, uncovering actionable insights, and supporting data-driven decision-making through interactive visualizations.
 
-The analysis is based on three datasets: Orders, Customers, and Restaurants. The project transforms raw transactional data into meaningful business insights by using data modeling, DAX measures, and interactive dashboards.
+The analysis is based on three datasets: **Orders**, **Customers**, and **Restaurants**. The project transforms raw transactional data into meaningful business insights using **Power Query**, **DAX**, **Data Modeling**, and **interactive dashboards**.
 
-🎯 Business Problems
-1. Revenue is Inconsistent
+---
 
-The company has experienced fluctuations in revenue over time. This project investigates the key factors contributing to these variations.
+# 🎯 Business Problems
 
-2. Restaurants are Underperforming
+## 1️⃣ Revenue is Inconsistent
 
-Several restaurants generate lower revenue and order volumes. This project identifies underperforming restaurants and analyzes the factors affecting their performance.
+The company has experienced fluctuations in revenue over time. This dashboard analyzes the major factors contributing to revenue inconsistency and helps identify opportunities to stabilize business performance.
 
-🎯 Objectives
-Analyze overall business performance.
-Monitor revenue trends over time.
-Evaluate restaurant performance.
-Compare revenue across cities and cuisines.
-Measure customer ordering behavior.
-Build interactive dashboards for business users.
-Support strategic business decisions through data visualization.
-🗂 Dataset
+## 2️⃣ Restaurants are Underperforming
 
-The project consists of three datasets.
+Several restaurants generate lower revenue and receive fewer orders than others. This dashboard identifies underperforming restaurants and analyzes their performance using revenue, ratings, cuisine, and order trends.
 
-Orders
-Order ID
-Customer ID
-Restaurant ID
-Order Timestamp
-Order Amount
-Revenue
-Discount Amount
-Delivery Fee
-Payment Mode
-Order Status
-Customers
-Customer ID
-Customer Name
-City
-Signup Time
-Acquisition Channel
-Restaurants
-Restaurant ID
-Restaurant Name
-Cuisine
-City
-Average Rating
-🛠 Tools & Technologies
-Microsoft Power BI
-Power Query
-DAX (Data Analysis Expressions)
-Data Modeling
-Microsoft Excel (Data Cleaning)
-Git & GitHub
-📊 Data Modeling
+---
 
-The data model follows a Star Schema.
+# 🎯 Objectives
 
-Customers
-      │
-      │
-Orders ───── Restaurants
-      │
-      │
-     Date
+- Analyze overall business performance
+- Monitor revenue trends over time
+- Evaluate restaurant performance
+- Compare revenue across cities and cuisines
+- Measure customer ordering behavior
+- Build interactive dashboards for business users
+- Support data-driven decision making
 
-Relationships:
+---
 
-Customers → Orders
-Restaurants → Orders
-Date → Orders
-📈 Dashboard Pages
-📄 Page 1 – Executive Overview
+# 📂 Dataset
 
-This page provides a high-level overview of business performance.
+The project uses three datasets:
 
-KPIs
-Total Revenue
-Total Orders
-Total Customers
-Total Restaurants
-Average Order Value (AOV)
-Cancellation Rate
-Average Rating
-Visuals
-Monthly Revenue Trend
-Revenue by City
-Revenue by Cuisine
-Order Status Distribution
-Filters
-Year
-City
-Restaurant
-📄 Page 2 – Revenue Analysis
+## 📦 Orders
 
-Focused on identifying the reasons behind inconsistent revenue.
+- Order ID
+- Customer ID
+- Restaurant ID
+- Order Timestamp
+- Order Amount
+- Revenue
+- Discount Amount
+- Delivery Fee
+- Payment Mode
+- Order Status
 
-KPIs
-Total Revenue
-Total Orders
-Average Order Value
-Cancellation Rate
-Visuals
-Monthly Revenue Trend
-Revenue by Restaurant
-Revenue by City
-Revenue vs Discount Analysis
-Business Insights
-Monthly revenue fluctuations
-Revenue contribution by restaurant
-Revenue comparison across cities
-Impact of discounts on revenue
-📄 Page 3 – Restaurant Performance
+---
+
+## 👥 Customers
+
+- Customer ID
+- Customer Name
+- City
+- Signup Time
+- Acquisition Channel
+
+---
+
+## 🍴 Restaurants
+
+- Restaurant ID
+- Restaurant Name
+- Cuisine
+- City
+- Average Rating
+
+---
+
+# 🛠️ Tools & Technologies
+
+- Microsoft Power BI
+- Power Query
+- DAX (Data Analysis Expressions)
+- Microsoft Excel
+- Data Modeling
+- Git
+- GitHub
+
+---
+
+# 📊 Data Model
+
+The dashboard follows a **Star Schema** data model.
+
+```
+              Customers
+                  │
+                  │
+Restaurants ─── Orders ─── Date
+```
+
+### Relationships
+
+- Customers ➜ Orders
+- Restaurants ➜ Orders
+- Date ➜ Orders
+
+---
+
+# 📈 Dashboard Pages
+
+## 📄 Page 1 — Executive Overview
+
+A high-level summary of business performance.
+
+### KPIs
+
+- Total Revenue
+- Total Orders
+- Total Customers
+- Total Restaurants
+- Average Order Value (AOV)
+- Cancellation Rate
+- Average Rating
+
+### Visuals
+
+- Monthly Revenue Trend
+- Revenue by City
+- Revenue by Cuisine
+- Order Status Distribution
+
+### Filters
+
+- Year
+- City
+- Restaurant
+
+---
+
+## 📄 Page 2 — Revenue Analysis
+
+Focused on understanding the causes of inconsistent revenue.
+
+### KPIs
+
+- Total Revenue
+- Total Orders
+- Average Order Value
+- Cancellation Rate
+
+### Visuals
+
+- Monthly Revenue Trend
+- Revenue by Restaurant
+- Revenue by City
+- Revenue vs Discount Analysis
+
+### Business Insights
+
+- Monthly revenue fluctuations
+- Revenue contribution by restaurants
+- Revenue comparison across cities
+- Impact of discounts on revenue
+
+---
+
+## 📄 Page 3 — Restaurant Performance
 
 Focused on identifying underperforming restaurants.
 
-KPIs
-Total Restaurants
-Average Rating
-Average Revenue per Restaurant
-Average Orders per Restaurant
-Visuals
-Top 10 Restaurants by Revenue
-Bottom 10 Restaurants by Revenue
-Revenue by Cuisine (Donut Chart)
-Restaurant Ratings Analysis
-Business Insights
-Best-performing restaurants
-Lowest-performing restaurants
-Cuisine-wise performance
-Restaurant rating comparison
-📌 DAX Measures Created
+### KPIs
 
-Some of the key DAX measures include:
+- Total Restaurants
+- Average Rating
+- Average Revenue per Restaurant
+- Average Orders per Restaurant
 
-Total Revenue
-Total Orders
-Total Customers
-Total Restaurants
-Average Order Value (AOV)
-Cancellation Rate
-Average Revenue per Restaurant
-Average Orders per Restaurant
-📈 Key Insights
-Revenue Analysis
-Revenue fluctuates across different months.
-Certain cities contribute significantly more revenue than others.
-Restaurant performance varies across locations.
-Discounts influence revenue trends but are not the sole factor.
-Restaurant Performance
-A small number of restaurants contribute the majority of revenue.
-Some restaurants consistently underperform.
-Cuisine preference differs across cities.
-Restaurant ratings provide additional context for performance evaluation.
-🚀 Features
-Interactive dashboard navigation
-Dynamic slicers and filters
-Responsive KPI cards
-Drill-down analysis
-Business-focused visualizations
-Clean and user-friendly interface
-📷 Dashboard Preview
-Dashboard 1
-Executive Overview
+### Visuals
 
-Dashboard 2
-Revenue Analysis
+- Top 10 Restaurants by Revenue
+- Bottom 10 Restaurants by Revenue
+- Revenue by Cuisine (Donut Chart)
+- Restaurant Ratings Analysis
 
-Dashboard 3
-Restaurant Performance
+### Business Insights
 
-(Add screenshots of each dashboard page here after uploading them to the repository.)
+- Best-performing restaurants
+- Lowest-performing restaurants
+- Cuisine-wise performance
+- Restaurant rating comparison
 
-📁 Repository Structure
-Zomato-PowerBI-Dashboard/
+---
+
+# 📌 DAX Measures Created
+
+- Total Revenue
+- Total Orders
+- Total Customers
+- Total Restaurants
+- Average Order Value (AOV)
+- Cancellation Rate
+- Average Revenue per Restaurant
+- Average Orders per Restaurant
+
+---
+
+# 📊 Key Insights
+
+## Revenue Analysis
+
+- Revenue fluctuates across different months.
+- Certain cities contribute significantly more revenue than others.
+- Restaurant performance varies across locations.
+- Discounts influence revenue trends but are not the sole factor affecting revenue.
+
+## Restaurant Performance
+
+- A small number of restaurants contribute the majority of total revenue.
+- Some restaurants consistently underperform.
+- Cuisine preferences differ across cities.
+- Restaurant ratings provide additional insights into overall performance.
+
+---
+
+# ✨ Features
+
+- Interactive dashboard navigation
+- Dynamic slicers and filters
+- Responsive KPI cards
+- Interactive visualizations
+- Business-focused insights
+- Clean and user-friendly interface
+
+---
+
+# 📷 Dashboard Preview
+
+## 🖥️ Page 1 — Executive Overview
+
+> *(Add screenshot here)*
+
+---
+
+## 📊 Page 2 — Revenue Analysis
+
+> *(Add screenshot here)*
+
+---
+
+## 🍽️ Page 3 — Restaurant Performance
+
+> *(Add screenshot here)*
+
+---
+
+# 📁 Repository Structure
+
+```
+Zomato_Data_Analysis/
 │
 ├── Data/
 │   ├── Orders.csv
@@ -186,7 +260,7 @@ Zomato-PowerBI-Dashboard/
 │   └── Restaurants.csv
 │
 ├── Dashboard/
-│   └── Zomato_Dashboard.pbix
+│   └── Zomato_Business_Dashboard.pbix
 │
 ├── Images/
 │   ├── Executive_Overview.png
@@ -195,27 +269,50 @@ Zomato-PowerBI-Dashboard/
 │
 ├── README.md
 └── LICENSE
-🎯 Future Improvements
-Add forecasting for revenue trends.
-Build customer retention and acquisition analysis.
-Include advanced drill-through pages.
-Publish the dashboard to Power BI Service.
-Implement Row-Level Security (RLS).
-📚 Learning Outcomes
+```
+
+---
+
+# 🚀 Future Improvements
+
+- Add revenue forecasting
+- Build customer acquisition and retention dashboard
+- Add drill-through reports
+- Publish dashboard to Power BI Service
+- Implement Row-Level Security (RLS)
+
+---
+
+# 📚 Learning Outcomes
 
 Through this project, I gained hands-on experience in:
 
-Data cleaning and transformation using Power Query
-Building a star schema data model
-Writing DAX measures and calculated columns
-Designing interactive Power BI dashboards
-Creating business-focused KPIs and reports
-Applying data visualization best practices
-Converting raw data into actionable business insights
-👨‍💻 Author
+- Data cleaning and transformation using Power Query
+- Building a Star Schema data model
+- Creating DAX measures and calculated columns
+- Designing interactive Power BI dashboards
+- Developing business KPIs
+- Applying data visualization best practices
+- Converting raw business data into actionable insights
 
-Pyata Preetham
+---
 
-🎓 BCA Student
+# 👨‍💻 Author
+
+## **Pyata Preetham**
+
+🎓 BCA Student  
 📊 Aspiring Data Analyst / Business Intelligence Analyst
-💻 Skills: Power BI, SQL, Python, Excel, DAX, Power Query
+
+### Skills
+
+- Power BI
+- SQL
+- Python
+- Excel
+- DAX
+- Power Query
+
+---
+
+## ⭐ If you found this project helpful, consider giving it a Star on GitHub!
