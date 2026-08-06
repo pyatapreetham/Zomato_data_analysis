@@ -1,4 +1,4 @@
-# 🍽️ Zomato Business Intelligence Dashboard | Power BI
+# 🍽️ Zpmato data analysis
 
 ## 📌 Project Overview
 
