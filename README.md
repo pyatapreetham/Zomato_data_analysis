@@ -233,44 +233,70 @@ Focused on identifying underperforming restaurants.
 
 ## 🖥️ Page 1 — Executive Overview
 
-> *(Add screenshot here)*
+
+<img width="712" height="411" alt="image" src="https://github.com/user-attachments/assets/336e907b-8e5e-426a-a9fe-7e979892a80c" />
+
 
 ---
 
 ## 📊 Page 2 — Revenue Analysis
 
-> *(Add screenshot here)*
+
+<img width="700" height="406" alt="image" src="https://github.com/user-attachments/assets/77fb49cd-732d-4623-864e-b314011456c4" />
+
 
 ---
 
 ## 🍽️ Page 3 — Restaurant Performance
 
-> *(Add screenshot here)*
+
+<img width="815" height="475" alt="image" src="https://github.com/user-attachments/assets/d1ea81a1-ecbd-45ff-a235-f8f1b983d342" />
 
 ---
 
 # 📁 Repository Structure
 
 ```
-Zomato_Data_Analysis/
-│
-├── Data/
-│   ├── Orders.csv
-│   ├── Customers.csv
-│   └── Restaurants.csv
-│
-├── Dashboard/
-│   └── Zomato_Business_Dashboard.pbix
-│
-├── Images/
-│   ├── Executive_Overview.png
-│   ├── Revenue_Analysis.png
-│   └── Restaurant_Performance.png
+Zomato_data_analysis/
 │
 ├── README.md
-└── LICENSE
-```
-
+├── LICENSE
+├── requirements.txt
+│
+├── Datasets/
+│   ├── cleaned_Customers.csv
+│   ├── cleaned_Orders.csv
+│   ├── cleaned_Restaurants.csv
+│   └── zomato.xlsx
+│
+├── Python_EDA/
+│   ├── Zomato_data_analysis.ipynb
+│   └── images/
+│
+├── SQL_Analysis/
+│   │
+│   ├── Problem-1_Revenue_Inconsistency/
+│   │   ├── Hypothesis-1_Order_Volume.sql
+│   │   ├── Hypothesis-2_Average_Order_Value.sql
+│   │   ├── Hypothesis-3_Cancelled_Orders.sql
+│   │   └── Hypothesis-4_Discounts.sql
+│   │
+│   └── Problem-2_Restaurant_Performance/
+│       ├── Hypothesis-1_Ratings.sql
+│       ├── Hypothesis-2_Cancellations.sql
+│       └── Hypothesis-3_Cuisine_City.sql
+│
+├── PowerBI_Dashboards/
+│   └── Zomato_Dashboard.pbix
+│
+├── Reports/
+│   └── Final_Conclusion_Report.docx
+│
+└── Assets/
+    ├── Dashboard_Overview.png
+    ├── Revenue_Dashboard.png
+    ├── Restaurant_Dashboard.png
+    └── SQL_Analysis.png
 ---
 
 # 🚀 Future Improvements
