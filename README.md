@@ -113,9 +113,7 @@ A high-level summary of business performance.
 - Total Revenue
 - Total Orders
 - Total Customers
-- Total Restaurants
 - Average Order Value (AOV)
-- Cancellation Rate
 - Average Rating
 
 ### Visuals
