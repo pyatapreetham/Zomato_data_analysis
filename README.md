@@ -2,10 +2,18 @@
 
 ## 📌 Project Overview
 
-This project presents an end-to-end **Business Intelligence Dashboard** built using **Microsoft Power BI** to analyze the performance of a food delivery platform (Zomato). The dashboard focuses on identifying key business challenges, uncovering actionable insights, and supporting data-driven decision-making through interactive visualizations.
+This project is an end-to-end Business Intelligence and Data Analytics project built around a food delivery platform (Zomato). It demonstrates the complete analytics lifecycle—from data cleaning and exploration to business problem-solving and interactive dashboard development.
 
-The analysis is based on three datasets: **Orders**, **Customers**, and **Restaurants**. The project transforms raw transactional data into meaningful business insights using **Power Query**, **DAX**, **Data Modeling**, and **interactive dashboards**.
+The project analyzes data from Orders, Customers, and Restaurants datasets to identify business challenges, validate hypotheses, uncover actionable insights, and provide data-driven recommendations for improving business performance.
 
+The analysis was carried out using multiple tools:
+
+Microsoft Excel – Data cleaning, preprocessing, pivot tables, and exploratory analysis
+SQL (MySQL) – Business problem analysis, hypothesis testing, and KPI calculations
+Python (Pandas, NumPy, Matplotlib) – Data cleaning, EDA, statistical analysis, and visualization
+Power BI – Data modeling, DAX measures, Power Query transformations, and interactive dashboards
+
+Throughout the project, real-world business problems such as revenue inconsistency and restaurant underperformance were investigated using a hypothesis-driven approach. The findings were translated into interactive dashboards and business recommendations to support informed decision-making.
 ---
 
 # 🎯 Business Problems
